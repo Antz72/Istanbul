@@ -218,11 +218,15 @@ hr {
 #gallery img {
   width: 100%;
   padding-bottom: 18px;
+  border:3px solid #021a40;
+  background-color:#ff0;
 }
 #gallery .col-md-4 div {
   position: relative;
   bottom: 18px;
   padding-bottom: 12px;
+  border:3px solid #021a40;
+  background-color:#ff0
 }
 #gallery h3 {
   font-size: 18px;
