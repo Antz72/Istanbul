@@ -17,6 +17,7 @@ body
 .heading {
   font-size: 22px;
   font-weight: 500;
+  text-shadow: 0px 0 silver, 1px 3px silver, 0px 0 silver, 0 0px silver;
 }
 
 .subheading {
@@ -152,12 +153,20 @@ hr {
   font-style: normal;
   padding-top: 10px;
 }
+#home h3 {
+  font-size: 22px;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  letter-spacing: 4px;
+  font-style: normal;
+  padding-top: 10px;
+}
 #home .btn {
   background: transparent;
   border-radius: 0;
   border: 3px solid #ffffff;
   color: #ffffff;
   font-weight: bold;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   letter-spacing: 2px;
   padding: 16px 42px;
   margin-top: 40px;
@@ -209,11 +218,15 @@ hr {
 #gallery img {
   width: 100%;
   padding-bottom: 18px;
+  border:3px solid #021a40;
+  background-color:#ff0;
 }
 #gallery .col-md-4 div {
   position: relative;
   bottom: 18px;
   padding-bottom: 12px;
+  border:3px solid #021a40;
+  background-color:#ff0
 }
 #gallery h3 {
   font-size: 18px;
@@ -255,6 +268,11 @@ hr {
   background: #999;
   color: #ffffff;
 }
+
+hours {
+    font-size: 18px;
+    color: white;
+} 
 
 /* footer section */
 footer {
@@ -336,3 +354,32 @@ footer .fa {
 #copyright a:hover {
   color: #FF0;
 }
+
+/* ==========================================================================
+.testimonial-slider
+========================================================================== */
+.testimonial-slider {
+  background: url("../images/testimonials-bg.jpg") no-repeat center center;
+  background-size: 100% 100%; }
+  .testimonial-slider .avatar {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 100%;
+    border: solid 3px #fff;
+    background-color: #fff; }
+    .testimonial-slider .avatar img {
+      width: 82px;
+      height: auto; }
+  .testimonial-slider h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 30px 0; }
+  .testimonial-slider p {
+    color: #ACB1B4;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
