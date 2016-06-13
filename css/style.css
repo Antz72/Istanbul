@@ -17,7 +17,21 @@ body
 .heading {
   font-size: 22px;
   font-weight: 500;
-  text-shadow: 0px 0 silver, 1px 3px silver, 0px 0 silver, 0 0px silver;
+  text-shadow: 0px 0 black, 1px 3px black, 0px 0 black, 0 0px black;
+}
+
+.whitebg_heading {
+  font-size: 30px;
+  font-weight: 500;
+  color: #791010;
+  text-shadow: 2px 2px black;
+}
+
+.redbg_heading {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 .subheading {
@@ -43,7 +57,7 @@ hr {
 	padding-bottom: 100px;
 }
 #menu, #contact {
-  background: #f0f0f0;
+  background: #791010;
 }
 
 .parallax-section {
@@ -102,7 +116,7 @@ hr {
 
 /* start navigation */
 .navbar-default {
-  background: #ffffff;
+  background: #791010;
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
   border: none;
   margin-bottom: 0;
@@ -111,7 +125,7 @@ hr {
   line-height: 28px;
 }
 .navbar-default .navbar-brand  {
-  color: #5C5C5C;
+  color: white;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -119,7 +133,9 @@ hr {
 .navbar-default .navbar-nav li a {
   font-size: 12px;
   letter-spacing: 1px;
+  color:white;
 }
+
 
 /* home section */
 #home {
@@ -163,18 +179,19 @@ hr {
 #home .btn {
   background: transparent;
   border-radius: 0;
-  border: 3px solid #ffffff;
+  border: 4px solid #791010;
   color: #ffffff;
   font-weight: bold;
-  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  text-shadow: -1px 0 black, 0 2px #791010, 2px 0 black, 0 -1px #791010;
   letter-spacing: 2px;
   padding: 16px 42px;
   margin-top: 40px;
   transition: all 0.4s ease-in-out;
 }
 #home .btn:hover {
-  background: #ffffff;
-  color: #202020;
+  background: #791010;
+  font-size: 15px;
+  /* color: #202020; */
 }
 
 /* team section */
@@ -202,6 +219,7 @@ hr {
 }
 #menu .col-md-6 {
   padding-bottom: 18px;
+  color: white;
 }
 #menu span {
   color: #5C5C5C;
@@ -217,22 +235,19 @@ hr {
 }
 #gallery img {
   width: 100%;
-  padding-bottom: 18px;
   border:3px solid #021a40;
-  background-color:#ff0;
+  padding: 5px;
 }
 #gallery .col-md-4 div {
   position: relative;
   bottom: 18px;
   padding-bottom: 12px;
   border:3px solid #021a40;
-  background-color:#ff0
 }
 #gallery h3 {
   font-size: 18px;
   line-height: 8px;
 }
-
 /* contact section */
 #contact {
   padding-top: 80px;
@@ -249,6 +264,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
+  color:white;
 }
 #contact .form-control:focus {
   border-color: #f9f9f9;
@@ -258,21 +274,23 @@ hr {
 }
 #contact input[type="submit"] {
   background: transparent;
-  border: 2px solid #999;
+  border: 2px solid white;
   border-radius: 10px;
   letter-spacing: 2px;
   margin-top: 12px;
   height: 50px;
 }
 #contact input[type="submit"]:hover {
-  background: #999;
-  color: #ffffff;
+  background: white;
+  color: #791010;
+  border: 6px solid #791010;
+  font-weight: bold;
 }
 
-hours {
-    font-size: 18px;
-    color: white;
-} 
+.txt_contact {
+  font-size: 20px;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
 
 /* footer section */
 footer {
@@ -316,9 +334,9 @@ footer .fa {
   padding: 0;
 }
 .social-icon li a {
-  background: #f0f0f0;
+  background: white;
   border-radius: 50%;
-  color: #5C5C5C;
+  color: red;
   font-size: 16px;
   width: 48px;
   height: 48px;
@@ -339,7 +357,7 @@ footer .fa {
 
 /* copyright section */
 #copyright {
-  background: #343434;
+  background: #791010;;
   color: #ffffff;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -354,32 +372,3 @@ footer .fa {
 #copyright a:hover {
   color: #FF0;
 }
-
-/* ==========================================================================
-.testimonial-slider
-========================================================================== */
-.testimonial-slider {
-  background: url("../images/testimonials-bg.jpg") no-repeat center center;
-  background-size: 100% 100%; }
-  .testimonial-slider .avatar {
-    width: 82px;
-    height: 82px;
-    margin: 0 auto;
-    vertical-align: middle;
-    overflow: hidden;
-    border-radius: 100%;
-    border: solid 3px #fff;
-    background-color: #fff; }
-    .testimonial-slider .avatar img {
-      width: 82px;
-      height: auto; }
-  .testimonial-slider h2 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 300;
-    font-style: italic;
-    margin: 30px 0; }
-  .testimonial-slider p {
-    color: #ACB1B4;
-    text-transform: uppercase;
-    letter-spacing: 2px; }
